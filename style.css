@@ -11,17 +11,3 @@
         overflow: hidden;
         position: relative;
     }
-
-    /* Developer styles */
-    #slides {
-        border: 2px solid black;
-        width: 1200px;
-        height: 400px;
-        margin: auto;
-    }
-
-    #slides-2 {
-        border: 2px solid black;
-        width: 300px;
-        height: 169px;;
-    }
