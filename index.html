@@ -18,6 +18,16 @@
         </div>
     </div>
 
+    <div id="slides-2" class="slide-show">
+        <div class="slides-inner">
+            <img src="images/hellebore-pollen-300-169.jpg" width="300" height="169" atl="hellbore">
+            <img src="images/li-pollen-300-169.jpg" width="300" height="169" atl="li pollen">
+            <img src="images/pollen-300-169.jpg" width="300" height="169" atl="pollen">
+            <img src="images/spores-300-169.jpg" width="300" height="169" atl="spores">
+            <img src="images/zsa-300-169.jpg" width="300" height="169" atl="zsa">
+        </div>
+    </div>
+
     <script>
         // JS here
 
@@ -26,6 +36,7 @@
             const slidesInner = slides.querySelector('.slides-inner')
             const images = slidesInner.querySelectorAll('img')
             
+            const slidesWidth = slides.clientWidth
             let  index = 0
 
             setInterval (function () {
@@ -34,12 +45,13 @@
                     index = 0
                 }
 
-                slidesInner.style.transform = `translate3d(${index * -1200}px, 0, 0)`
+                slidesInner.style.transform = `translate3d(${index * -slidesWidth}px, 0, 0)`
 
             }, 2000)
         }
 
         makeSlideshow('slides')
+        makeSlideshow('slides-2')
 
     </script>
 </body>
