@@ -20,6 +20,27 @@
 
     <script>
         // JS here
+
+        function makeSlideshow(slidesId) {
+            const slides = document.getElementById(slidesId)
+            const slidesInner = slides.querySelector('.slides-inner')
+            const images = slidesInner.querySelectorAll('img')
+            
+            let  index = 0
+
+            setInterval (function () {
+                index += 1
+                if (index === images.length) {
+                    index = 0
+                }
+
+                slidesInner.style.transform = `translate3d(${index * -1200}px, 0, 0)`
+
+            }, 2000)
+        }
+
+        makeSlideshow('slides')
+
     </script>
 </body>
 </html>
