@@ -1,0 +1,17 @@
+/* Slide show styles */
+    .slides-inner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slide-show {
+        overflow: hidden
+    }
+
+    /* Developer styles */
+    #slides {
+        border: 2px solid black;
+        width: 1200px;
+        height: 400px;
+        margin: auto;
+    }
